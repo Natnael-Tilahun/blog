@@ -8,14 +8,23 @@ const tailwind = require('tailwindcss')
 const purgecss = require('@fullhuman/postcss-purgecss')
 
 const postcssPlugins = [
-  tailwind(),
+  tailwind()
 ]
 
 if (process.env.NODE_ENV === 'production') postcssPlugins.push(purgecss(require('./purgecss.config.js')))
 
 module.exports = {
     siteName: 'Gridsome',
-    plugins: [],
+    plugins: [
+        // {
+        //     use: '@gridsome/source-strapi',
+        //     options: {
+        //       apiURL: `http://localhost:1337`,
+        //       queryLimit: 1000, // Defaults to 100
+        //       contentTypes: [`Blog`, `Category`],
+        //     },
+        //   }
+    ],
     css: {
         loaderOptions: {
             postcss: {
