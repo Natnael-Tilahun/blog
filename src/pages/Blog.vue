@@ -26,7 +26,7 @@
                       </div>
 
                       <div class="mb-8 flex space-x-5">
-                        <p   class="font-bold uppercase hover:text-gray-500" @click="$router.push(`/blog/${edge.node.id}`)">Read More</p>
+                        <p   class="font-bold uppercase hover:text-gray-500" @click="$router.push(`/blog/${edge.node.title}`)">Read More</p>
                         <!-- <button class="font-bold border-2 rounded-md px-5 py-1 hover:text-gray-300 hover:bg-slate-600">Like</button> -->
                       </div>
                   </div>

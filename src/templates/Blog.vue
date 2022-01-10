@@ -22,7 +22,7 @@
 
 <page-query>
 query{
-  blog(id:"edge.node.id"){
+  blog(id:"2"){
      id
     title
     date (format: "MMMM D, Y, h:mm a ")
